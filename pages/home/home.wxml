@@ -1,0 +1,24 @@
+<view>
+    <Search></Search>
+    <block wx:for="{{teacherList}}" wx:key="id">
+        <navigator class="item" url="/pages/detail/detail?id={{item.id}}">
+            <view class="icon_item">
+                <text class="iconfont icon-lianxiren"></text>
+            </view>
+            <view class="item_info">
+                <view class="item_name">
+                    <text class="key">姓名: </text>
+                    <text class="val">{{item.name}}</text>
+                </view>
+                <view class="item_phone">
+                    <text class="key">电话: </text>
+                    <text class="val">{{item.mobile}}</text>
+                </view>
+            </view>
+            <view class="item_next">
+                <text class="iconfont icon-jiantou"></text>
+            </view>
+        </navigator>
+    </block>
+</view>
+

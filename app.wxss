@@ -1,0 +1,11 @@
+/**app.wxss**/
+@import "./style/iconfont.wxss";
+page,view,text,navigator,swiper,swiper-item,image{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+page{
+  --themeColor:#4fc08d;
+  font-size: 28rpx;
+}

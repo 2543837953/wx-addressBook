@@ -1,0 +1,54 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/department/department",
+          "pathName": "pages/department/department",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addDep/addDep",
+          "pathName": "pages/addDep/addDep",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addEmployee/addEmployee",
+          "pathName": "pages/addEmployee/addEmployee",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

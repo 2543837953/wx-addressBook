@@ -1,0 +1,51 @@
+<block wx:if="{{user}}">
+    <view class="header">
+        <view class="header_img">
+            <image src="../../icon/top_img.png"></image>
+            <view class="text">
+                <view class="label">用户名:</view>
+                <view class="username">{{user.name}}</view>
+            </view>
+        </view>
+        <view class="authority">
+            <view class="label">
+                权限:
+            </view>
+            <view class="label">
+             {{authority}}
+            </view>
+        </view>
+    </view>
+    <van-cell-group>
+        <block wx:if="{{department}}">
+        <van-cell
+                is-link
+                title="部门管理"
+                link-type="navigateTo"
+                url="/pages/department/department"
+                icon="minus"
+        />
+        </block>
+        <block wx:if="{{addD}}">
+            <van-cell
+                    is-link
+                    title="添加部门"
+                    link-type="navigateTo"
+                    url="/pages/addDep/addDep"
+                    icon="plus"
+            />
+        </block>
+        <block wx:if="{{addE}}">
+            <van-cell
+                    is-link
+                    title="添加员工"
+                    link-type="navigateTo"
+                    url="/pages/addEmployee/addEmployee"
+                    icon="plus"
+            />
+        </block>
+    </van-cell-group>
+    <view class="btn">
+        <van-button type="danger" block round bind:click="Logout">退出</van-button>
+    </view>
+</block>

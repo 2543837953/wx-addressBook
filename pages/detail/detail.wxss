@@ -1,0 +1,7 @@
+/* pages/detail/detail.wxss */
+.van-button{
+    margin: 40rpx 0;
+}
+.btn{
+    padding: 0 32rpx;
+}

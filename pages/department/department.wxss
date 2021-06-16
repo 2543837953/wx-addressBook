@@ -1,0 +1,13 @@
+/* pages/department/department.wxss */
+van-cell-group .van-cell__title,.van-cell__value{
+    font-size: 28rpx;
+}
+.del{
+    height: 100%;
+    background: red;
+    color: #fff;
+    text-align: center;
+    width: 65px;
+    line-height: 44px;
+    font-size: 28rpx;
+}

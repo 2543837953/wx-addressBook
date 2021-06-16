@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/home/home",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/department/department",
+    "pages/addDep/addDep",
+    "pages/addEmployee/addEmployee",
+    "pages/editEmployee/editEmployee"
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4fc08d",
+    "navigationBarTitleText": "通讯录管理",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "icon/_home.png",
+      "selectedIconPath": "icon/home.png"
+    },
+    {
+      "pagePath":"pages/my/my",
+      "text": "我的",
+      "iconPath": "icon/_my.png",
+      "selectedIconPath": "icon/my.png"
+    }],
+  "color": "#2c2c2c",
+  "selectedColor": "#07C160"
+  },
+  "sitemapLocation": "sitemap.json"
+}

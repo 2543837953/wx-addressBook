@@ -1,0 +1,45 @@
+page{
+    background-color: #F7F8FA;
+}
+.btn{
+    padding: 0 16px;
+    margin-top: 40rpx;
+}
+.page-section{
+    padding:10px 16px;
+    height: 44px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+}
+.page-section-title{
+    color:#646566;
+    width: 87px;
+    height: 24px;
+    line-height: 24px;
+}
+van-cell-group .van-field__label,
+van-cell-group input{
+    font-size: 28rpx;
+}
+.section{
+    font-size: 28rpx;
+    padding:10px 16px;
+    height: 44px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+}
+radio-group{
+    margin-left: 12px;
+}
+.section picker{
+    width: 50%;
+    height:100%;
+    margin-left: 12px;
+}
+.section picker .picker{
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+}

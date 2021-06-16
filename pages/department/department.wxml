@@ -1,0 +1,19 @@
+<block wx:if="{{!!departmentList[0]}}">
+    <block wx:for="{{departmentList}}" wx:key="id">
+        <van-swipe-cell
+                id="swipe-cell"
+                right-width="{{ 65 }}"
+                async-close
+                bind:close="onClose"
+                name="{{item.id}}"
+        >
+            <van-cell-group>
+                <van-cell title="部门名称" value="{{item.name}}" />
+            </van-cell-group>
+            <view slot="right" class="del">删除</view>
+        </van-swipe-cell>
+    </block>
+    <van-dialog id="van-dialog" />
+</block>
+
+

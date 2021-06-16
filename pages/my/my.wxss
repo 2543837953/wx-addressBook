@@ -1,0 +1,29 @@
+.header{
+    padding: 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.label{
+    margin-bottom: 10rpx;
+}
+.header_img{
+    display: flex;
+    align-items: center;
+}
+.header_img .text{
+    margin-left: 20rpx;
+}
+.header_img image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.btn{
+    margin-top: 50rpx;
+    padding:0 32rpx;
+}
+van-cell-group .van-cell__title{
+    font-size: 28rpx;
+}

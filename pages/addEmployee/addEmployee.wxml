@@ -1,0 +1,75 @@
+<form catchsubmit="formSubmit" >
+    <van-cell-group>
+        <van-field
+                model:value="{{ name }}"
+                placeholder="请输入姓名"
+                border="{{ false }}"
+                label="姓名"
+
+        />
+        <view class="page-section">
+            <view class="page-section-title">性别</view>
+            <radio-group name="gender">
+                <label class="radio" >
+                    <radio value="男" checked="true"/>男
+                </label>
+                <label class="radio" >
+                    <radio value="女"/>女
+                </label>
+            </radio-group>
+        </view>
+        <van-field
+                model:value="{{ birth_date }}"
+                placeholder="请输入生日期(yyyy-mm-dd)"
+                border="{{ false }}"
+                label="出生日期"
+        />
+        <van-field
+                model:value="{{ phone }}"
+                placeholder="请输入电话号码"
+                border="{{ false }}"
+                label="电话号码"
+        />
+        <van-field
+                model:value="{{ post_title }}"
+                placeholder="请输入职称"
+                border="{{ false }}"
+                label="职称"
+        />
+        <view class="section" wx:if="{{departmentList[0]}}">
+            <view class="page-section-title">部门</view>
+            <picker mode="selector" bindchange="getDepartment"  model:value="{{index}}" range="{{departmentList}}" range-key="{{'name'}}" >
+                <view class="picker">
+                    {{departmentList[index].name||"请选择部门"}}
+                </view>
+                <input name="department_id" value="{{departmentList[index].id}}" style="display: none" />
+            </picker>
+        </view>
+        <van-field
+                model:value="{{ username }}"
+                placeholder="请输入用户名"
+                border="{{ false }}"
+                label="用户名"
+        />
+        <van-field
+                model:value="{{ email }}"
+                placeholder="请输入用邮箱"
+                border="{{ false }}"
+                label="邮箱"
+        />
+        <view class="section" wx:if="{{competenceList}}">
+            <view class="page-section-title">权限</view>
+            <picker mode="selector" bindchange="getCompetence"  model:value="{{comIndex}}" range="{{competenceList}}" range-key="{{'name'}}" >
+                <view class="picker">
+                    {{competenceList[comIndex].name||"请选择权限"}}
+                </view>
+                <input name="competence" value="{{competenceList[comIndex].value}}" style="display: none" />
+            </picker>
+        </view>
+    </van-cell-group>
+    <view class="btn">
+        <van-button round type="info" block formType="submit">添加</van-button>
+    </view>
+</form>
+
+

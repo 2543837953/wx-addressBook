@@ -1,0 +1,21 @@
+<van-cell-group>
+    <van-field
+            model:value="{{ name }}"
+            placeholder="请输入部门名称"
+            border="{{ false }}"
+            label="部门名称"
+
+    />
+    <van-field
+            model:value="{{ telephone }}"
+            placeholder="请输入部门电话"
+            border="{{ false }}"
+            label="部门电话"
+    />
+</van-cell-group>
+<view class="btn">
+    <van-button round type="info" block bind:tap="addDep">添加</van-button>
+</view>
+
+
+

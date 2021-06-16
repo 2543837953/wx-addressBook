@@ -1,0 +1,24 @@
+<view wx:if="{{!!teacherInfo.id}}">
+    <van-cell-group>
+        <van-cell title="编号" value="{{teacherInfo.id}}"/>
+        <van-cell title="名字" value="{{teacherInfo.name}}"/>
+        <van-cell title="性别" value="{{teacherInfo.gender}}"/>
+        <van-cell title="出生日期" value="{{teacherInfo.birth_date}}"/>
+        <van-cell title="邮箱" value="{{teacherInfo.email}}"/>
+        <van-cell title="电话" value="{{teacherInfo.mobile}}"/>
+        <van-cell title="职称" value="{{teacherInfo.post_title}}"/>
+        <van-cell title="类别" value="{{teacherInfo.category}}"/>
+        <van-cell title="部门" value="{{teacherInfo.department}}"/>
+    </van-cell-group>
+    <view class="btn">
+        <van-button type="primary" block round bind:click="playPhone">打电话</van-button>
+        <block wx:if="{{showEdit}}">
+            <navigator url="/pages/editEmployee/editEmployee?id={{teacherInfo.id}}">
+                <van-button type="info" block round>编辑</van-button>
+            </navigator>
+        </block>
+        <block wx:if="{{showDel}}">
+                <van-button type="danger" block round bind:tap="delEmp">删除</van-button>
+        </block>
+    </view>
+</view>
